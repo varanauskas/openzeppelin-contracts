@@ -2,13 +2,13 @@
 
 pragma solidity ^0.8.0;
 
-import "../../token/ERC20/ERC20.sol";
+import "../ERC20/ERC20.sol";
 import "./IERC1132.sol";
 
 /**
  * @dev Implementation of the {IERC1132} interface
  */
-contract ERC1132 is ERC20, IERC1132 {
+contract ERC1132 is IERC1132, ERC20 {
   /**
    * @dev Reasons why a user's tokens have been locked
    */

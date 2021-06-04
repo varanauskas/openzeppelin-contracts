@@ -2,11 +2,13 @@
 
 pragma solidity ^0.8.0;
 
+import "../ERC20/IERC20.sol";
+
 /**
  * @title Interface of the ERC1132 standard as defined in the EIP.
  * @dev see https://github.com/ethereum/EIPs/issues/1132
  */
-interface IERC1132 {
+interface IERC1132 is IERC20 {
   /**
    * @dev Locks a specified amount of tokens against an address,
    *      for a specified reason and time
